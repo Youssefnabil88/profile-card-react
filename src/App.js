@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import SkillList from './SkillList'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="card">
+      <img
+        src={`${process.env.PUBLIC_URL}/myImage.jpeg`}
+        alt="Youssef's"
+        className="avatar"
+      ></img>
+      <div className="data">
+        <h1>Youssef Nabil</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Student @ computer science and AI Cairo university, now iam learning
+          react.js, i need to enter the CS department
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <SkillList/>
+      </div>
     </div>
   );
 }
