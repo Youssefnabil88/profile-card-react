@@ -37,7 +37,7 @@ export default function SkillList() {
   return (
     <div className="skill-list">
       {skills.map((el) => (
-        <Skill mySkill={el} key={el.skill} />
+        <Skill {...el} key={el.skill} />
       ))}
     </div>
   );
